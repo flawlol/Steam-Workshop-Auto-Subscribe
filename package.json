@@ -1,0 +1,15 @@
+{
+  "name": "node-ts-docker",
+  "version": "1.0.0",
+  "description": "Fejlesztői környezet Node + TypeScript + Docker Compose alapokon",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.1",
+    "typescript": "^5.3.3"
+  }
+}

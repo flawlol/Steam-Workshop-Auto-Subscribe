@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            width: 320px;
+            font-family: sans-serif;
+            background-color: rgb(15, 15, 15);
+            color: rgb(242, 240, 230);
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: rgb(220, 20, 60);
+            color: rgb(255, 250, 240);
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .author-section {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #ccc;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+
+            a {
+                color: #1e90ff;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+        button:disabled {
+          background: #888 !important;
+          color: #eee !important;
+          cursor: not-allowed !important;
+          opacity: 1;
+        }
+
+        button:disabled:hover {
+          background: #888 !important;
+          color: #eee !important;
+          cursor: not-allowed !important;
+        }
+
+        .custom-hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(90deg, #ff5f6d, #ffc371);
+            border-radius: 2px;
+            margin: 16px 0;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h3>SWAC</h3>
+    <hr class="custom-hr">
+    <h4>Steam Workshop Auto-Collection</h4>
+</div>
+
+<button id="subscribeAll">Subscribe All</button>
+<button id="unsubscribeAll">Unsubscribe All</button>
+<button id="testButton">Test</button>
+
+<label>
+    <input type="checkbox" id="debugMode"/>
+    Debug Mode (only 10 items)
+</label>
+
+<section class="author-section">
+    👤 Created by fLAWless<br>
+    📧 <a href="mailto:flawlesslol123@gmail.com">flawlesslol123@gmail.com</a><br>
+    🧑‍💻 <a href="https://www.reddit.com/user/flawlol6/" target="_blank">Reddit: u/flawlol6</a><br>
+    🎮 <a href="https://steamcommunity.com/id/flawlol" target="_blank">Steam: flawlol</a>
+</section>
+
+<script type="module" src="dist/popup.js"></script>
+</body>
+</html>
