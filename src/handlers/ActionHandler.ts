@@ -1,5 +1,7 @@
+import { ActionTypes } from "../types/ActionTypes";
+
 class ActionHandler {
-    handle(action: 'subscribe' | 'unsubscribe', steamToggledClass: string, debug: boolean) {
+    handle(action: ActionTypes, steamToggledClass: string, debug: boolean) {
         chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
             const tab = tabs[0];
             if (!tab) return;
